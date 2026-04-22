@@ -152,9 +152,10 @@ body {
   font-size: 1.5rem;
   color: #ffffff;
   transition: all 0.3s ease;
+  margin-bottom: 20px;
 }
 
-.img {
+.icon-box img {
   width: 30px;
   height: 30px;
   position: relative;
@@ -166,6 +167,7 @@ body {
   color: var(--text-white);
   transform: translateY(-5px);
 }
+
 
               /* PRODUCT IMAGES */
 
@@ -425,7 +427,6 @@ body {
     overflow-x: hidden;
 }
 
-
 .mobile-menu {
     position: fixed;
     top: 70px; 
@@ -477,19 +478,26 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
-}
-
 
 /*================ benefit section media query=============*/
-  .img-container {
-    padding-top: 30px; 
-    margin-top: 20px;
-  }
-  
-   .bnt-item {
-    padding-top: 80px !important; 
-    display: block !important; 
-  }
+ .feature-card {
+  text-align: center;
+}
+
+.icon-box {
+  margin: 0 auto 12px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product2-img {
+  margin: 0 auto;
+}
+
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -504,9 +512,22 @@ body {
   }
 
 /*==========modern hair media query=============*/
-  .hero-img { height: 450px; }
-  .section-heading { font-size: 2.5rem; }
+  .hero-img {
+     height: 450px;
+     }
 
+.section2,
+.ayurveda-section {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+.section-description {
+  padding: 0 10px;
+}
 
 /*=============Footer section media query===========*/
     .footer-section {
@@ -577,7 +598,6 @@ body {
     position: relative;
     overflow: hidden; 
     background: linear-gradient(180deg, #ffffff 0%, rgba(226, 230, 234, 0.9) 100%); 
-
 }
 
 .img-fluid {
@@ -589,17 +609,14 @@ body {
 
 .ing-card{
     width: 100%;
-    max-width: 500px;
+    max-width:500px;
+    margin:0;
 }
-.img-ingrediant {
-  width: 100%;
-  max-width: 500px; 
-  height: 400px;   
-  object-fit: cover; 
-  display: block;
 
-  margin-left: 0;     
-  margin-right: auto;   
+.img-ingrediant {
+ width: 100%;
+ height:350px;   
+ object-fit: cover;  
 }
 
 .img-fluid:hover {
@@ -638,16 +655,37 @@ body {
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
-    .text-derm p {
-        font-size: 10px;
-        padding: 0 5px;
+
+    .col-lg-4.order-2 {
+        text-align: center;
     }
-    
-    .text-derm {
+
+    .ayurveda-badge {
+        margin: 0 auto 12px;
+    }
+
+.content-wrap,
+.text-secondary,
+.display-3,
+.display-5 {
+    text-align: center;
+}
+
+/* image container default */
+.ing-card {
+    margin: 0 auto;
+}
+
+.text-derm p {
+  font-size: 10px;
+  padding: 0 5px;
+    }
+
+ .text-derm {
         min-height: 100px;
     }
 
-    h1.display-3 {
+  h1.display-3 {
         font-size: 2.5rem;
     }
 } 
@@ -675,9 +713,6 @@ body {
         padding-bottom: 40px;
     }
 
-    .product-row:last-child {
-        border-bottom: none;
-    }
 
     /* IMAGE AND BACKGROUND CARD*/
 
@@ -685,6 +720,7 @@ body {
     position: relative;
     display: inline-block;
     z-index: 1;
+    margin: 0 auto;
 }
 
 .bg-card::before {
@@ -774,18 +810,28 @@ body {
     
     @media (min-width:768px) {
    
-    .premium-img-wrapper img {
-        box-shadow: none ; 
-    }
+    .product-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
 
-    .product-row:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-    
-    .product-row:nth-child(even) .product-meta {
-        align-items: flex-end;  
-        text-align: right;
-    }
+/* IMAGE CENTER */
+.premium-img-wrapper,
+.bg-card {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* TEXT CENTER */
+.product-meta {
+    text-align: center;
+    align-items: center;
 }
 
 /*=========================Benefits section==========================*/
