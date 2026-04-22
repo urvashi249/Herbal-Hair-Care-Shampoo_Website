@@ -586,11 +586,20 @@ body {
     width: 100%;
     object-fit: cover;
 }
+
+.ing-card{
+    width: 100%;
+    max-width: 500px;
+}
 .img-ingrediant {
   width: 100%;
-  height: auto;
-  max-height: 450px;
-  object-fit: cover;
+  max-width: 500px; 
+  height: 400px;   
+  object-fit: cover; 
+  display: block;
+
+  margin-left: 0;     
+  margin-right: auto;   
 }
 
 .img-fluid:hover {
