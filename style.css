@@ -846,12 +846,14 @@ body {
     .product-row {
         margin-bottom: 50px;
     }
-
-    .bg-card {
-        width: 90%;
-        max-width: 300px;  /* prevents large card */
-        margin: 0 auto;
+.bg-card {
+        display: inline-block; 
     }
+
+    .bg-card::before {
+        display: none; 
+        
+        }
 
     .bg-card img {
          width: 100%;
