@@ -735,7 +735,7 @@ body {
 .bg-card {
     position: relative;
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 40px;
     z-index: 1;
 }
 
