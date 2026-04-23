@@ -735,7 +735,7 @@ body {
 .bg-card {
     position: relative;
     display: inline-block;
-    border-radius: 40px;
+    border-radius: 20px;
     z-index: 1;
 }
 
@@ -854,8 +854,9 @@ body {
     }
 
     .bg-card img {
-        height: 250px;
-        object-fit: contain;
+         width: 100%;
+         border-radius: 20px; 
+         object-fit: contain;        
     }
 
     .premium-img-wrapper {
